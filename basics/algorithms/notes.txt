@@ -1,0 +1,108 @@
+** Algorithm Characteristics **
+
+- Space complexity: How much memory does it require?
+
+- Time complexity: Home much time does it take to complete?
+
+Inputs and Output
+
+- What does the algorithm accept, and what are the results?
+
+
+** Common Algorithms **
+
+Search Algorithms
+
+- Find specific data in a structure (for example, a substring within a string)
+
+Sorting Algorithms
+
+- Take a dataset and apply a sort order to it
+
+Computational Algorithms
+
+- Given one set of data, calcualte another (is a given number prime?)
+
+Collection Algorithms
+
+- Work with collections of data (count specific items, navigate data elements, filter out unwanted data)
+
+
+** Understanding Algorithm Performance **
+
+- Measure how an algorithm responds to dataset size
+
+- Big-O notation
+
+- Classifies performance as the input size grows
+
+- "O" indicates the order of operation: time scale to perform an operation
+
+- Usually describes the worst case performance scenario
+
+
+** Overview of Data Structures **
+
+Arrays - Collection of elements identified by index or key
+
+- Calculate item index: O(1)
+
+- Insert or delete item at beginning: O(n)
+
+- Insert or delete item in middle: O(n)
+
+- Insert or delete item at end: O(1)
+
+
+Linked Lists - Collection of data elements, called nodes
+
+- Collection of data elements, called nodes
+
+- Contain reference to the next node in the list
+
+- Hold whatever data the application needs
+
+- Elements can be easily inserted and removed
+
+- Underlying memory doesn't need to be reorganized
+
+- Can't do constant-time random item access
+
+- Item lookup is linear in time complexity O(n)
+
+
+Stacks and Queues
+
+- Stack: collection that supports push and pop operations
+
+- The last item pushed is the first one popped
+
+- Queue: collection that suports adding a removing
+
+- First item added is the first item out
+
+
+Hash tables 
+
+- Key-to-value mappings are unique
+
+- Hash tables are typically very fast
+
+- For small datasets, arrays are usually more efficient
+
+
+** Bubble Sort **
+
+- Very simple to understand and implement 
+
+- Performance: O(n^2)
+
+- For loops inside of for loops are usually n^2
+
+- Other sorting algorithms are generally much better
+
+- Not considered to be a practical solution
+
+
+
+

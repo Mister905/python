@@ -1,0 +1,174 @@
+Procedural Code vs. Object-Oriented Code
+
+Procedural programming is a programming paradigm, derived from structured programming, based upon the concept of the procedure call. Procedures, also known as routines, subroutines, or functions, simply contain a series of computational steps to be carried out.
+
+Object-oriented programming (OOP) is a programming paradigm based on the concept of “objects”, which may contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known as methods.
+
+One of the main advantages of using an object oriented approach is code re-usability.
+
+Object-orientation is a programming paradigm - a set of ideas that are supported by many languages 
+
+Identity, attributes, and behaviors. Those are the three things that describe objects in an object-oriented programming language. Every object in a computer program is self-contained so it has its own identity separate from other objects, its own attributes to describe its current state and its own behaviors, the things it can do.
+
+
+** Class **
+
+Code-template for creating program objects
+
+Class Components
+
+- Name: What is it?
+
+e.g. Cookie
+
+- Attributes: What describes it?
+
+e.g. weight, colour, icing
+
+- Behaviour: What can it do? i.e. a method
+
+e.g. decorate(), consume()
+
+Method
+
+- A program procedure that can return a value
+
+- Defined as part of a class
+
+- Can only access data known to its object
+
+
+Existing classes in OO languages
+
+* At a minimum
+
+- Strings, Dates, Collections, File I/O, Networking, etc...
+
+
+Abstraction
+
+ABSTRACTION is the concept of object-oriented programming that "shows" only essential attributes and "hides" unnecessary information. The main purpose of abstraction is hiding the unnecessary details from the users.
+
+ABSTRACT CLASS is a type of class in OOPs, that declare one or more abstract methods. These classes can have abstract methods as well as concrete methods. A normal class cannot have abstract methods. An abstract class is a class that contains at least one abstract method.
+
+ABSTRACT METHOD is a method that has just the method definition but does not contain implementation. A method without a body is known as an Abstract Method. It must be declared in an abstract class. The abstract method will never be final because the abstract class must implement all the abstract methods.
+
+The main benefit of using an abstract class is that it allows you to group several related classes as siblings.
+Abstraction helps to reduce the complexity of the design and implementation process of software.
+
+Abstract methods are mostly declared where two or more subclasses are also doing the same thing in different ways through different implementations. It also extends the same Abstract class and offers different implementations of the abstract methods.
+
+e.g. instead of creating a James class or a Suzy class just create a Person class that defines the defining attributes of both James and Suzy
+
+
+Encapsulation
+
+Encapsulation is a mechanism to wrap up variables(data) and methods(code) together as a single unit. It is the process of hiding information details and protecting data and behavior of the object.
+
+Data Hiding is hiding the variables of a class from other classes. It can only be accessed through the method of their current class. It hides the implementation details from the users. But more than data hiding, it is meant for better management or grouping of related data.
+
+Getter and Setter are two conventional methods used to retrieve and update values of a variable. They are mainly used to create, modify, delete and view the variable values. The setter method is used for updating values and the getter method is used for reading or retrieving the values. They are also known as an accessor and mutator.
+
+Encapsulation is binding the data with its related functionalities. Here functionalities mean "methods" and data means "variables"
+
+So we keep variable and methods in one place. That place is "class." Class is the base for encapsulation.
+
+
+Inheritance
+
+Inheritance is a mechanism in which one class acquires the property of another class. For example, a child inherits the traits of his/her parents. With inheritance, we can reuse the fields and methods of the existing class. Hence, inheritance facilitates Reusability and is an important concept of OOPs.
+
+- Base a new object or class on an existing one
+- Inherit the existing attributes and methods
+
+e.g. Customer class inherits from Person class
+e.g. Whale class inherits from Mammal class
+
+Superclass (a.k.a. Parent class / Base class)
+
+Subclass (a.k.a. Child class / Derived class)
+
+The super keyword is similar to "this" keyword.
+
+The keyword super can be used to access any data member or methods of the parent class.
+
+Super keyword can be used at variable, method and constructor level.
+
+
+Polymorphism
+
+Polymorphism occurs when there are one or more classes or objects related to each other by inheritance. In other words, it is the ability of an object to take many forms. Inheritance lets users inherit attributes and methods, and polymorphism uses these methods for performing different tasks. So, the goal is communication but the approach is different.
+
+For example, you have a smartphone for communication. The communication mode you choose could be anything. It can be a call, a text message, a picture message, mail, etc. So, the goal is common that is communication, but their approach is different. This is called Polymorphism.
+
+We have one parent class, ‘Account’ with function of deposit and withdraw. Account has 2 child classes
+
+The operation of deposit and withdraw is same for Saving and Checking accounts. So the inherited methods from Account class will work.
+
+There is a change in the requirement specification, something that is so common in the software industry. You are supposed to add functionality privileged Banking Account with Overdraft Facility.
+
+For a background, overdraft is a facility where you can withdraw an amount more than available the balance in your account.
+
+So, withdraw method for privileged needs to be implemented afresh. But you do not change the tested piece of code in Savings and Checking account. This is advantage of OOPS
+
+But when the "Withdraw" method for the privileged account (overdraft facility) is called withdraw method defined in the privileged class is executed instead of the withdraw method defined in the parent. This is Polymorphism.
+
+Method Overriding is redefining a super class method in a sub class.
+
+Rules for Method Overriding
+
+- The method signature i.e. method name, parameter list and return type have to match exactly.
+
+- The overridden method can widen the accessibility but not narrow it, i.e. if it is private in the base class, the child class can make it public but not vice versa.
+
+Method overloading is in the same class, where more than one method have the same name but different signatures.
+
+Method overriding is when one of the methods in the super class is redefined in the sub-class. In this case, the signature of the method remains the same.
+
+
+Analysis, Design, and Programming
+
+1. Gather requirements
+2. Describe the application
+3. Identify the main objects
+4. Describe the interactions
+5. Create a class diagram
+
+
+Unified Modeling Language (UML)
+
+The Unified Modeling Language (UML) is made up of integrated diagrams used by IT developers for the visual representation of objects, states and processes within a software or system. The modeling language can serve as a blueprint for a project and guarantee a structured information architecture; and also can help developers present their description of a system in a comprehensible way for external specialists. UML is mainly used in object-oriented software development.
+
+The UML Class diagram is a graphical notation used to construct and visualize object oriented systems. A class diagram in the Unified Modeling Language (UML) is a type of static structure diagram that describes the structure of a system by showing the system's:
+
+classes,
+their attributes,
+operations (or methods),
+and the relationships among objects.
+
+
+Defining Requirements
+
+Non-Functional Requirements 
+
+How should it do it?
+
+- Legal
+- Performance 
+- Client Support
+- Security 
+
+Functional Requirements 
+
+- The system must do x
+- The application must do y
+
+
+Use Cases
+
+Title: What is the goal?
+
+Primary Actor: Who desires it?
+
+Success Scenario: How is it accomplished?
+
