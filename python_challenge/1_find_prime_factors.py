@@ -17,7 +17,9 @@ def get_prime_factors(n):
         print(prime_factors[i]),
 
 
-get_prime_factors(630)
+if __name__ == '__main__':
+    print(get_prime_factors(630))
+    
 
 # 2 3 3 5 7
 # 2*3*3*5*7 = 630

@@ -5,10 +5,11 @@ def is_palindrome(string):
         return forwards == reverse
     else:
         return "Please enter a valid string"
-    
 
-print(is_palindrome("aNnA"))
+if __name__ == '__main__':  
 
-print(is_palindrome("tESt"))
+    print(is_palindrome("aNnA"))
 
-print(is_palindrome(200))
+    print(is_palindrome("tESt"))
+
+    print(is_palindrome(200))

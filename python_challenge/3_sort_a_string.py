@@ -7,4 +7,5 @@ def sort_string(string):
     words = [w[len(w)/2:] for w in words]
     print(words)
 
-sort_string("The quick brown fox jumps over the lazy dog")
+if __name__ == '__main__':
+    sort_string("The quick brown fox jumps over the lazy dog")
