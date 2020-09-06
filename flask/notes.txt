@@ -1,0 +1,78 @@
+pip3 -V
+
+
+Set Up Virtual Environment
+
+
+pip3 install virtualenv
+
+
+mkdir <project_name>
+
+
+cd <project_name>
+
+
+python3 -m venv venv
+
+
+source ./venv/bin/activate
+
+
+pip3 install flask
+
+
+mkdir application
+
+
+touch ./application/app.py
+
+
+pip3 list
+
+
+touch .flaskenv
+
+
+FLASK_ENV=development
+FLASK_APP=main.py
+
+
+^ In order to use the variables in .flaskenv you need to install 
+
+
+pip3 install python-dotenv
+
+
+touch main.py 
+
+
+pip3 list
+
+
+deactivate # deactivates venv
+
+
+# Generate a requirements file and then install from it in another environment
+
+
+pip3 freeze > requirements.txt
+
+
+pip3 install -r requirements.txt
+
+
+flask run
+
+
+Benefits of an ORM 
+
+- Works with Python objects, not SQL
+
+- Allows you to switch your database easily
+
+- You can control the structure of your database from your code, which can be managed by a revision control system like Git
+
+- Supports multiple database platforms
+
+pip3 install Flask-SQLAlchemy
