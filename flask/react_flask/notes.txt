@@ -1,3 +1,5 @@
+PRJECT SETUP
+
 yarn create react-app client
 
 cd client
@@ -19,3 +21,70 @@ pip install flask python-dotenv
 touch .flaskenv
 
 flask run
+
+client/package.json
+
+"start-api": "cd ../api && venv/bin/flask run --no-debugger",
+
+"proxy": "http://localhost:5000"
+
+client/.gitignore
+
+venv
+__pycache__
+../api/__pycache__/api.cpython-37.pyc
+
+cd client 
+
+yarn start-api
+
+yarn start
+
+yarn build
+
+
+SERVER SETUP
+
+https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04
+
+
+ssh root@138.197.164.16
+
+adduser jamesm
+
+usermod -aG sudo jamesm
+
+ufw allow OpenSSH
+
+ufw enable
+
+ufw status # You can see that SSH connections are still allowed
+
+As the firewall is currently blocking all connections except for SSH, if you install and configure additional services, you will need to adjust the firewall settings to allow acceptable traffic in. You can learn some common UFW operations in this guide.
+
+Since your public key is already in the root account’s ~/.ssh/authorized_keys file on the server, we can copy that file and directory structure to our new user account in our existing session.
+
+rsync --archive --chown=jamesm:jamesm ~/.ssh /home/jamesm
+
+Now, open up a new terminal session and using SSH with your new username:
+
+ssh jamesm@138.197.164.16
+
+INSTALL DEPENDENCIES
+
+sudo apt update
+
+sudo apt install nodejs
+
+sudo apt install yarn
+
+sudo apt install software-properties-common
+
+sudo add-apt-repository ppa:deadsnakes/ppa
+
+sudo apt install python3.7
+
+python3.7 --version
+
+sudo apt install python3-pip
+
