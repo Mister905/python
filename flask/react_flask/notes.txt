@@ -1,0 +1,21 @@
+yarn create react-app client
+
+cd client
+
+yarn start
+
+cd ..
+
+mkdir api
+
+cd api 
+
+python3 -m venv venv
+
+source venv/bin/activate
+
+pip install flask python-dotenv
+
+touch .flaskenv
+
+flask run
