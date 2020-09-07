@@ -32,7 +32,6 @@ client/.gitignore
 
 venv
 __pycache__
-../api/__pycache__/api.cpython-37.pyc
 
 cd client 
 
@@ -43,10 +42,10 @@ yarn start
 yarn build
 
 
+
 SERVER SETUP
 
 https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04
-
 
 ssh root@138.197.164.16
 
@@ -70,6 +69,8 @@ Now, open up a new terminal session and using SSH with your new username:
 
 ssh jamesm@138.197.164.16
 
+
+
 INSTALL DEPENDENCIES
 
 sudo apt update
@@ -88,3 +89,25 @@ python3.7 --version
 
 sudo apt install python3-pip
 
+sudo apt install git
+
+
+
+https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-18-04
+
+sudo apt install nginx
+
+Before testing Nginx, the firewall software needs to be adjusted to allow access to the service. Nginx registers itself as a service with ufw upon installation, making it straightforward to allow Nginx access.
+
+sudo ufw app list
+
+It is recommended that you enable the most restrictive profile that will still allow the traffic you’ve configured. Since we haven’t configured SSL for our server yet in this guide, we will only need to allow traffic on port 80.
+
+sudo ufw allow 'Nginx HTTP'
+
+systemctl status nginx  # check with the systemd init system to make sure the service is running by typing
+
+You can access the default Nginx landing page to confirm that the software is running properly by navigating to your server’s IP address. If you do not know your server’s IP address, you can get it a few different ways.
+
+
+ip addr show eth0 | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'
